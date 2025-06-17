@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STAGE ORANGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef; /* Couleur de fond douce */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            position: relative; /* Pour le texte en arrière-plan */
+            background-image: url('logo.jpg'); /* Image de fond */
+            background-size: contain; /* Maintient le rapport d'aspect */
+            background-position: center; /* Centre l'image */
+            background-repeat: no-repeat; /* Ne pas répéter l'image */
+        }
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4em; /* Taille du texte */
+            color: rgba(0, 123, 255, 0.1); /* Couleur bleue avec transparence */
+            white-space: nowrap; /* Empêche le retour à la ligne */
+            pointer-events: none; /* Ignore les événements de souris */
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9); /* Fond blanc avec transparence */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre plus douce */
+            width: 90%;
+            max-width: 400px;
+            transition: all 0.3s ease;
+            position: relative; /* Pour superposer le conteneur sur le texte */
+            z-index: 1; /* Assure que le conteneur est au-dessus du texte */
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #007bff; /* Couleur bleue pour le titre */
+        }
+        .erreur {
+            color: #dc3545; /* Couleur rouge pour les erreurs */
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ced4da; /* Bordure grise */
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff; /* Bordure bleue au focus */
+            outline: none; /* Retirer le contour par défaut */
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* Couleur de fond bleue */
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* Couleur plus foncée au survol */
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+
+</head>
+<body>
+<p>METTEZ LE RESUME </p>
+</body>
+</html>
